@@ -10,16 +10,16 @@ const HeroSection = () => {
       <VStack
         mx={[10,20]}
         w={"full"}
-        justify={"flex-start"} // Change from "center" to "flex-start"
-        align={"flex-start"} // Change from "center" to "flex-start"
+        justify={"flex-start"}
+        align={"flex-start"} 
         px={useBreakpointValue({ base: 2, md: 6 })}
-        py={useBreakpointValue({ base: 10, md: 40 })} // Adding vertical padding
+        py={useBreakpointValue({ base: 10, md: 40 })} 
       >
         <Box
           color={"black"}
           fontWeight={700}
           textAlign="left"
-          w={"full"} // Ensure content takes full width
+          w={"full"}
           maxW={"2xl"}
           spacing={6}
         >
@@ -28,12 +28,22 @@ const HeroSection = () => {
             Build the Ultimate Winning Team with Sportskeeda's AI-Driven Fantasy Cricket Team Builder!
           </Text>
           <Stack direction={["column", "row"]} spacing={4} mt={4}>
-            <Button colorScheme="white" size="lg" variant="outline">
-              Get Started
-            </Button>
-            <Button colorScheme="white" size="lg" variant="outline">
-              Learn More
-            </Button>
+          <Button
+            colorScheme="white"
+            size="lg"
+            variant="outline"
+            _hover={{ color: "red" }}
+          >
+            Get Started
+          </Button>
+          <Button
+            colorScheme="white"
+            size="lg"
+            variant="outline"
+            _hover={{ color: "red" }}
+          >
+            Learn More
+          </Button>
           </Stack>
         </Box>
       </VStack>
