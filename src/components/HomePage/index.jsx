@@ -22,7 +22,7 @@ const HomePage = () => {
         alignItems="center"
         justifyContent="flex-start"
         w="full"
-        backgroundImage={'https://media.istockphoto.com/id/1176722175/photo/stadium-lights-and-empty-green-grass-field-with-fans-around-perspective-tribune-view.jpg?s=612x612&w=0&k=20&c=qNQeEDJHBt3FIf49yuhIry6PiLizWcjgX4cPtZ3Y4-I='}
+        backgroundColor={'white'}
         backgroundSize={"cover"}
         backgroundRepeat={"no-repeat"}
         backgroundPosition={"center center"}
@@ -33,10 +33,10 @@ const HomePage = () => {
       </Flex>
       
       <Download />
-      <EarnMore title={"Play Fantasy Game Online & Earn More"} />
-      <Benefits title={"HalaPlay Benefits"} />
+      <EarnMore />
+      <Benefits />
       <StepsToPlay />
-      <Testimonial title={"What our users say"} />
+      <Testimonial />
       <FollowUs />
     </Flex>
   );
