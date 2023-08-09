@@ -8,21 +8,21 @@ const testimonials = [
     position: 'CEO',
     company: 'Olpers',
     image: '...',
-    content: `Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper`,
+    content: `"I've been a cricket fan for years, and discovering the cricket fantasy app has truly taken my love for the game to a whole new level. As an avid player, I can't stress enough how addictive and exciting this app is. The AI-driven team recommendations have completely changed the way I approach creating my fantasy teams.`,
   },
   {
     name: 'John Smith',
     position: 'MD',
     company: 'IKmh',
     image: '...',
-    content: `digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper`,
+    content: `The accuracy of the predictions is astonishing! I've found myself consistently getting better results in my fantasy leagues, thanks to the insights provided by the app. It's like having a personal cricket analyst in my pocket. The app's user-friendly interface and real-time updates make the experience even more enjoyable.`,
   },
   {
     name: 'Allen',
     position: 'Studdent',
     company: 'hdyr',
     image: '...',
-    content: `Proin iaculis purus consequat sem cure digni ssim donec hhftr hhfyt bbgd tyyei yudhr ghnt yu porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper`,
+    content: `I also love the customizable strategies feature. It allows me to tailor my team-building approach according to my preferences and strategies. And the best part? The app is incredibly secure and reliable. I can trust that my data and transactions are safe.`,
   },
 ];
 
@@ -57,10 +57,10 @@ const Testimonials = () => {
       <Box className="carousel-container">
         <Box className="carousel" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
           {testimonials.map((obj, index) => (
-            <Box key={index} className="carousel-slide" >
+            <Box key={index} className="carousel-slide" justifyItems="center">
               <Box
                 rounded="md"
-                p={6}
+                py={6}
                 pos="relative"
                 bg={useColorModeValue('white', 'gray.800')}
               >
