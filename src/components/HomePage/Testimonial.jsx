@@ -53,11 +53,10 @@ const Testimonials = () => {
           h={[30, 60]}
         />
       </Box>
-    <Box>
-      <div className="carousel-container">
-        <div className="carousel" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
+      <Box className="carousel-container">
+        <Box className="carousel" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
           {testimonials.map((obj, index) => (
-            <div key={index} className="carousel-slide">
+            <Box key={index} className="carousel-slide">
               <Box
                 rounded="md"
                 p={6}
@@ -72,7 +71,7 @@ const Testimonials = () => {
                 <Avatar
                   size="lg"
                   showBorder={true}
-                  borderColor="green.400"
+                  borderColor="green.40;0"
                   name="avatar"
                   m={4}
                   src={obj.image}
@@ -84,12 +83,12 @@ const Testimonials = () => {
                   {obj.position}, {obj.company}
                 </Text>
               </Box>
-            </div>
+            </Box>
           ))}
-        </div>
-      </div>
+        </Box>
+      </Box>
 
-      <Flex justify="start" mt={4} px={6}>
+      <Flex justify={["center", "start"]} mt={4} px={6}>
         <IconButton
           aria-label="Previous Slide"
           icon={<ChevronLeftIcon />}
@@ -104,7 +103,6 @@ const Testimonials = () => {
           isRound={true}
         />
       </Flex>
-    </Box>
     </SimpleGrid>
     </Container>
   );

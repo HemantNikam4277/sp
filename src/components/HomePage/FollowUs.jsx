@@ -2,7 +2,7 @@ import { Box, Heading, Link, Stack } from "@chakra-ui/react";
 
 const FollowUs = () => {
   return (
-    <Box bg="#fa274e" w="100%" h={["30vh", "70vh"]}>
+    <Box bg="#fa274e" w="100%" h={["35vh", "70vh"]}>
       <Box textAlign="left" mx={[5, 40]} mt={[50,100]}>
         <Heading as="h1" color="white" fontSize={['20px', '40px']} mb={4}>
         "Ready to take your fantasy cricket game to the next level? Download the Sportskeeda app now and start building your winning team today!"
