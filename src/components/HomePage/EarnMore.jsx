@@ -2,7 +2,7 @@ import { Box, Flex, Image, Text, Heading } from "@chakra-ui/react";
 
 const HomePage = () => {
   return (
-    <Flex direction={{ base: "column", md: "row" }} w="100vw" minH="100vh">
+    <Flex direction={{ base: "column", md: "row" }} w="100vw" minH={["50vh","100vh"]}>
       <Box flex="1" px={8}>
         <Image
           src="https://t3.ftcdn.net/jpg/05/92/64/14/240_F_592641465_TaUrjQsTxOfDs1K2BjiPBpzlV9mYuWBn.jpg"
