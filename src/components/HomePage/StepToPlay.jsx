@@ -49,12 +49,12 @@ const StepsToPlay = () => {
 
 const Step = ({ title, description, imageSrc, altText }) => {
   return (
-    <VStack spacing={6} alignItems="center" flex="1" p={6} rounded="lg">
-      <Image src={imageSrc} alt={altText} mb={4} />
+    <VStack spacing={6} alignItems="center" flex="1" p={[1,6]} rounded="lg">
+      <Image src={imageSrc} alt={altText} w="100%" h="100%" mb={2} />
       <Heading as="h3" size="lg" mb={2}>
         {title}
       </Heading>
-      <Text color="gray.600">{description}</Text>
+      <Text color="gray.600" pb={4}>{description}</Text>
     </VStack>
   );
 };

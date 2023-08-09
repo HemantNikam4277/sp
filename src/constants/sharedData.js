@@ -4,17 +4,17 @@ import { TbBrandTelegram } from "react-icons/tb";
 export const NAV_ITEMS = [
     {
         label: 'Features',
-        href:'https://play.halaplay.com/'
+        href:'#'
 
     },
     {
         label: 'Winnings',
-        href:'/point-system'
+        href:'#'
 
     },
     {
         label: 'Upcomming Cricket Matches',
-        href:'/about-us'
+        href:'#'
     },
     {
         label: 'Cricket Stadiums',

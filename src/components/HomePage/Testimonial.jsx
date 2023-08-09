@@ -1,111 +1,82 @@
-import {
-  Container,
-  Box,
-  chakra,
-  Flex,
-  Text,
-  Stack,
-  Avatar,
-  SimpleGrid,
-  useColorModeValue
-} from '@chakra-ui/react';
+import { Container, Box, chakra, Flex, Text, Avatar, useColorModeValue, Image, IconButton, SimpleGrid } from '@chakra-ui/react';
+import { useState } from 'react';
+import { ChevronLeftIcon, ChevronRightIcon } from '@chakra-ui/icons';
 
 const testimonials = [
   {
     name: 'Ben Parker',
     position: 'CEO',
     company: 'Olpers',
-    image:
-      'https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&auto=format&fit=crop&w=334&q=80',
-    content: `Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit
-      rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam,
-      risus at semper`
+    image: '...',
+    content: `Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper`,
   },
   {
-    name: 'Jena Karlis',
-    position: 'GM',
-    company: 'Olpers',
-    image:
-      'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=334&q=80',
-    content: `Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit
-      rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam,
-      risus at semper`
+    name: 'John Smith',
+    position: 'MD',
+    company: 'IKmh',
+    image: '...',
+    content: `digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper`,
   },
   {
-    name: 'Vicky Hald',
-    position: 'CFO',
-    company: 'Olpers',
-    image:
-      'https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&auto=format&fit=crop&w=334&q=80',
-    content: `Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit
-      rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam,
-      risus at semper`
+    name: 'Allen',
+    position: 'Studdent',
+    company: 'hdyr',
+    image: '...',
+    content: `Proin iaculis purus consequat sem cure digni ssim donec hhftr hhfyt bbgd tyyei yudhr ghnt yu porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper`,
   },
-  {
-    name: 'Vicky Hald',
-    position: 'CFO',
-    company: 'Olpers',
-    image:
-      'https://images.unsplash.com/photo-1606513542745-97629752a13b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80',
-    content: `Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit
-      rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam,
-      risus at semper`
-  }
 ];
 
 const Testimonials = () => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const handlePrevSlide = () => {
+    setCurrentIndex((prevIndex) => (prevIndex === 0 ? testimonials.length - 1 : prevIndex - 1));
+  };
+
+  const handleNextSlide = () => {
+    setCurrentIndex((prevIndex) => (prevIndex === testimonials.length - 1 ? 0 : prevIndex + 1));
+  };
+
   return (
     <Container maxW="5xl" py={20} px={6}>
       <Flex justify="center" mb={8}>
         <chakra.h3 fontSize="3xl" fontWeight="bold" mb={3} textAlign="center">
-        "See what other fantasy cricket enthusiasts are saying about our AI-driven fantasy cricket team builder!"
+          "See what other fantasy cricket enthusiasts are saying about our AI-driven fantasy cricket team builder!"
         </chakra.h3>
       </Flex>
-      <SimpleGrid columns={{ base: 1, md: 2 }} placeItems="center" spacing={1} mt={12} mb={4}>
-        {testimonials.map((obj, index) => (
-          <Stack
-            key={index}
-            direction={{ base: 'column', sm: 'row' }}
-            spacing={2}
-            mb={5}
-            justify="center"
-          >
-            <Stack
-              maxW="345px"
-              boxShadow="lg"
-              rounded="md"
-              p={6}
-              pos="relative"
-              bg={useColorModeValue('white', 'gray.800')}
-              _after={{
-                content: `""`,
-                w: '0',
-                h: '0',
-                borderColor: `transparent ${useColorModeValue('white', '#1a202c')} transparent`,
-                borderStyle: 'solid',
-                borderWidth: '10px 0 10px 10px',
-                position: 'absolute',
-                top: { base: 'unset', sm: '45%' },
-                right: { base: 'unset', sm: '-10px' },
-                left: { base: '48%', sm: 'unset' },
-                bottom: { base: '-15px', sm: 'unset' },
-                transform: { base: 'rotate(90deg)', sm: 'unset' },
-                display: 'block'
-              }}
-            >
-              <Text fontWeight="medium" fontSize="sm">
-                {obj.content}
-              </Text>
-            </Stack>
-            <Stack direction="column" spacing={2} p={2} justify="flex-end" alignItems="center">
-              <Avatar
-                size="lg"
-                showBorder={true}
-                borderColor="green.400"
-                name="avatar"
-                src={obj.image}
-              />
+    <SimpleGrid columns={[1,2]}>
+      <Box px={8}>
+        <Image
+          src="	https://plineup-prod.s3.ap-south-1.amazonaws.com/assets/img/quote_sign.png"
+          alt="AI Cricket"
+          w={[30, 60]}
+          h={[30, 60]}
+        />
+      </Box>
+    <Box>
+      <div className="carousel-container">
+        <div className="carousel" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
+          {testimonials.map((obj, index) => (
+            <div key={index} className="carousel-slide">
+              <Box
+                rounded="md"
+                p={6}
+                pos="relative"
+                bg={useColorModeValue('white', 'gray.800')}
+              >
+                <Text fontWeight="medium" fontSize="sm">
+                  {obj.content}
+                </Text>
+              </Box>
               <Box textAlign="center">
+                <Avatar
+                  size="lg"
+                  showBorder={true}
+                  borderColor="green.400"
+                  name="avatar"
+                  m={4}
+                  src={obj.image}
+                />
                 <Text fontWeight="bold" fontSize="md">
                   {obj.name}
                 </Text>
@@ -113,10 +84,28 @@ const Testimonials = () => {
                   {obj.position}, {obj.company}
                 </Text>
               </Box>
-            </Stack>
-          </Stack>
-        ))}
-      </SimpleGrid>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <Flex justify="start" mt={4} px={6}>
+        <IconButton
+          aria-label="Previous Slide"
+          icon={<ChevronLeftIcon />}
+          onClick={handlePrevSlide}
+          mr={4}
+          isRound={true}
+        />
+        <IconButton
+          aria-label="Next Slide"
+          icon={<ChevronRightIcon />}
+          onClick={handleNextSlide}
+          isRound={true}
+        />
+      </Flex>
+    </Box>
+    </SimpleGrid>
     </Container>
   );
 };

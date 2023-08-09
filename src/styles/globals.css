@@ -1,27 +1,25 @@
-::-webkit-scrollbar {
-  width: 6px;
-}
 
-/* Track */
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #644a8f;
-  border-radius: 20px;
-}
-/* Global Styling here */
-.noScrollBar::-webkit-scrollbar {
-  display: none;
-}
 /* the slides */
 
 .swiper {
   width: 100%;
   height: 100%;
 }
+
+.carousel-container {
+  display: flex;
+  overflow: hidden;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+  flex: 0 0 100%;
+}
+
 
 .swiper-slide {
   text-align: center;
