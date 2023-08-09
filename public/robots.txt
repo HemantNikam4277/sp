@@ -1,2 +1,9 @@
+# *
 User-agent: *
-Disallow: /
+Allow: /
+
+# Host
+Host: https://www.halaplay.com
+
+# Sitemaps
+Sitemap: https://www.halaplay.com/sitemap.xml

@@ -33,10 +33,10 @@ const HomePage = () => {
       </Flex>
       
       <Download />
-      <EarnMore title={"Play Fantasy Game Online & Earn More"} />
-      <Benefits title={"HalaPlay Benefits"} />
+      <EarnMore />
+      <Benefits />
       <StepsToPlay />
-      <Testimonial title={"What our users say"} />
+      <Testimonial />
       <FollowUs />
     </Flex>
   );
