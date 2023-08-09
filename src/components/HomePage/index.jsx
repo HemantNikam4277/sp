@@ -1,10 +1,9 @@
 import { Flex } from "@chakra-ui/react";
 import Benefits from "./Benefits";
-import EarnMore from "./EarnMore";
+import MainSection from "./MainSection";
 import HeroSection from "./HeroSection";
 import Testimonial from "./Testimonial";
 import StepsToPlay from "./StepToPlay";
-import Download from "../Download/Download";
 import FollowUs from "./FollowUs";
 import Header from "../Header";
 
@@ -31,9 +30,7 @@ const HomePage = () => {
         <Header />
         <HeroSection />
       </Flex>
-      
-      <Download />
-      <EarnMore />
+      <MainSection />
       <Benefits />
       <StepsToPlay />
       <Testimonial />
