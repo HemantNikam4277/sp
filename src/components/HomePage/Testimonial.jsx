@@ -53,10 +53,11 @@ const Testimonials = () => {
           h={[30, 60]}
         />
       </Box>
+      <Box>
       <Box className="carousel-container">
         <Box className="carousel" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
           {testimonials.map((obj, index) => (
-            <Box key={index} className="carousel-slide">
+            <Box key={index} className="carousel-slide" >
               <Box
                 rounded="md"
                 p={6}
@@ -67,7 +68,7 @@ const Testimonials = () => {
                   {obj.content}
                 </Text>
               </Box>
-              <Box textAlign="center">
+              <Box align="center">
                 <Avatar
                   size="lg"
                   showBorder={true}
@@ -103,6 +104,7 @@ const Testimonials = () => {
           isRound={true}
         />
       </Flex>
+      </Box>
     </SimpleGrid>
     </Container>
   );
