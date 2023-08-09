@@ -22,7 +22,7 @@ const HomePage = () => {
         alignItems="center"
         justifyContent="flex-start"
         w="full"
-        backgroundColor={'white'}
+        backgroundImage={'https://media.istockphoto.com/id/1176722175/photo/stadium-lights-and-empty-green-grass-field-with-fans-around-perspective-tribune-view.jpg?s=612x612&w=0&k=20&c=qNQeEDJHBt3FIf49yuhIry6PiLizWcjgX4cPtZ3Y4-I='}
         backgroundSize={"cover"}
         backgroundRepeat={"no-repeat"}
         backgroundPosition={"center center"}
