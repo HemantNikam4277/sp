@@ -2,21 +2,39 @@ import { Box, Flex, Image, Text, Heading } from "@chakra-ui/react";
 
 const HomePage = () => {
   return (
-    <Flex direction={{ base: "column", md: "row" }} w="100vw" minH={["60vh","100vh"]}>
-      <Box flex="1">
+    <Flex
+      direction={{ base: "column", md: "row" }}
+      w="100vw"
+      minH={["60vh", "100vh"]}
+      bg="gray.100"
+    >
+      <Box
+        flex="1"
+        order={{ base: 2, md: 1 }} // Order for desktop: Image first
+      >
         <Image
-          src="https://t3.ftcdn.net/jpg/05/92/64/14/240_F_592641465_TaUrjQsTxOfDs1K2BjiPBpzlV9mYuWBn.jpg"
+          src="/virat.png"
           alt="AI Cricket"
           objectFit="cover"
           w="100%"
           h="100%"
         />
       </Box>
-
-      <Box flex="1" bg="white" px={8} py={{ base: 8, md: 0 }} display="flex" justifyContent="center" alignItems="center">
+      <Box
+        flex="1"
+        order={{ base: 1, md: 2 }} // Order for mobile: Text first
+        px={8}
+        py={{ base: 8, md: 0 }}
+        display="flex"
+        justifyContent="center"
+        alignItems="center"
+      >
         <Box maxW="600px" mx="auto" textAlign="center">
-          <Heading size="xl" mb={4}>
-            Welcome to the Future of <br></br><Text as="span" color="#d32f2d">Fantasy Cricket!</Text>
+          <Heading as="h2" size="xl" mb={6}>
+            Welcome to the Future of <br />
+            <Text as="span" color="#d32f2d">
+              Fantasy Cricket!
+            </Text>
           </Heading>
           <Text fontSize="lg" color="gray.600">
             With Sportskeeda's AI-driven fantasy cricket team builder, you can

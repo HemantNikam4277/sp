@@ -7,7 +7,7 @@ const HomePage = () => {
   return (
     <Box bg="white" py={12}>
     <Box textAlign="center" mb={8}>
-      <Heading as="h2" size="xl" mb={4}>
+      <Heading as="h2" size="xl" mb={6}>
       <Text as="span" color="#d32f2d">Sportskeeda </Text>has got everything
       </Heading>
       <Text fontSize="lg" color="gray.600">

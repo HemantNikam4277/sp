@@ -1,52 +1,71 @@
-import { Flex, VStack, Box, Heading, Text, Button, Stack, useBreakpointValue } from "@chakra-ui/react"; 
+import {
+  Flex,
+  Image,
+  Box,
+  Heading,
+  Text,
+  Button,
+  Stack,
+  useBreakpointValue,
+  SimpleGrid,
+} from "@chakra-ui/react";
 
 const HeroSection = () => {
   return (
     <Flex
-      w={"full"}
-      h={["45vh", "100vh"]}
-      pos="relative"
+      direction={{ base: "column", md: "row" }}
+      w="100vw"
+      minH={["60vh", "100vh"]}
     >
-      <VStack
-        mx={[10,20]}
-        w={"full"}
-        justify={"flex-start"}
-        align={"flex-start"} 
-        px={useBreakpointValue({ base: 2, md: 6 })}
-        py={useBreakpointValue({ base: 10, md: 40 })} 
+      <Box
+        flex="1"
+        bg="white"
+        px={8}
+        py={{ base: 8, md: 0 }}
+        display="flex"
+        justifyContent="center"
+        alignItems="center"
       >
-        <Box
-          color={"black"}
-          fontWeight={700}
-          textAlign="left"
-          w={"full"}
-          maxW={"2xl"}
-          spacing={6}
-        >
-        <Heading fontSize={["30px", "50px"]} mb={4}>Unleash the Power of AI in <Text as="span" color="#d32f2d">Fantasy Cricket!</Text></Heading>
+        <Box maxW="600px" ml={[0, 20]} textAlign="start">
+          <Heading fontSize={["30px", "50px"]} mb={4}>
+            Unleash the Power of AI in{" "}
+            <Text as="span" color="#d32f2d">
+              Fantasy Cricket!
+            </Text>
+          </Heading>
           <Text as="span" fontWeight={200} fontSize={["20px", "30px"]}>
-            Build the Ultimate Winning Team with Sportskeeda's AI-Driven Fantasy Cricket Team Builder!
+            Build the Ultimate Winning Team with Sportskeeda's AI-Driven Fantasy
+            Cricket Team Builder!
           </Text>
           <Stack direction={["column", "row"]} spacing={4} mt={4}>
-          <Button
-            colorScheme="white"
-            size="lg"
-            variant="outline"
-            _hover={{ color: "#d32f2d" }}
-          >
-            Get Started
-          </Button>
-          <Button
-            colorScheme="white"
-            size="lg"
-            variant="outline"
-            _hover={{ color: "#d32f2d" }}
-          >
-            Learn More
-          </Button>
+            <Button
+              colorScheme="white"
+              size="lg"
+              variant="outline"
+              _hover={{ color: "#d32f2d" }}
+            >
+              Get Started
+            </Button>
+            <Button
+              colorScheme="white"
+              size="lg"
+              variant="outline"
+              _hover={{ color: "#d32f2d" }}
+            >
+              Learn More
+            </Button>
           </Stack>
         </Box>
-      </VStack>
+      </Box>
+      <Box flex="1">
+        <Image
+          src="/mobileapp.png"
+          alt="AI Cricket"
+          objectFit="cover"
+          w="100%"
+          h="100%"
+        />
+      </Box>
     </Flex>
   );
 };
