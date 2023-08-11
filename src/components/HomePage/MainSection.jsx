@@ -16,7 +16,7 @@ const HomePage = () => {
       <Box flex="1" bg="white" px={8} py={{ base: 8, md: 0 }} display="flex" justifyContent="center" alignItems="center">
         <Box maxW="600px" mx="auto" textAlign="center">
           <Heading size="xl" mb={4}>
-            Welcome to the Future of Fantasy Cricket!
+            Welcome to the Future of <Text as="span" color="#d32f2d">Fantasy Cricket!</Text>
           </Heading>
           <Text fontSize="lg" color="gray.600">
             With Sportskeeda's AI-driven fantasy cricket team builder, you can
