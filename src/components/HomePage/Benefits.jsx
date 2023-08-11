@@ -21,27 +21,27 @@ const HomePage = () => {
             Features
           </Heading>
           <Feature
-            icon={<GiArtificialHive size={20} color="red" />}
+            icon={<GiArtificialHive size={20} color="#d32f2d" />}
             title="AI-Powered Predictions"
             description="Harness the power of AI to make data-driven decisions. Our algorithms analyze player performance, weather conditions, pitch reports, and more to provide you with the most accurate team recommendations."
           />
           <Feature
-            icon={<MdVerifiedUser size={20} color="red" />}
+            icon={<MdVerifiedUser size={20} color="#d32f2d" />}
             title="Easy-to-Use Interface"
             description="Whether you're a beginner or a seasoned fantasy cricket player, our user-friendly interface makes team building a breeze. Simply input your preferences, and let our AI do the rest!"
           />
           <Feature
-            icon={<MdUpdate size={20} color="red" />}
+            icon={<MdUpdate size={20} color="#d32f2d" />}
             title="Real-Time Updates"
             description="Stay ahead of the game with real-time updates on player injuries, form, and other crucial factors. Our system constantly updates to provide you with the latest insights."
           />
           <Feature
-            icon={<BiCustomize size={20} color="red" />}
+            icon={<BiCustomize size={20} color="#d32f2d" />}
             title="Customizable Strategies"
             description="Want to take control? Customize your team-building strategy with various filters and preferences. Tailor your team to your unique playing style."
           />
           <Feature
-            icon={<MdOutlineSecurity size={20} color="red" />}
+            icon={<MdOutlineSecurity size={20} color="#d32f2d" />}
             title="Secure and Reliable"
             description="Your data is safe with us. We prioritize security and privacy, ensuring a seamless and trustworthy experience."
           />

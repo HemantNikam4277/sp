@@ -23,7 +23,7 @@ const HeroSection = () => {
           maxW={"2xl"}
           spacing={6}
         >
-        <Heading fontSize={["30px", "50px"]} mb={4}>Unleash the Power of AI in <Text as="span" color="red">Fantasy Cricket!</Text></Heading>
+        <Heading fontSize={["30px", "50px"]} mb={4}>Unleash the Power of AI in <Text as="span" color="#d32f2d">Fantasy Cricket!</Text></Heading>
           <Text as="span" fontWeight={200} fontSize={["20px", "30px"]}>
             Build the Ultimate Winning Team with Sportskeeda's AI-Driven Fantasy Cricket Team Builder!
           </Text>
@@ -32,7 +32,7 @@ const HeroSection = () => {
             colorScheme="white"
             size="lg"
             variant="outline"
-            _hover={{ color: "red" }}
+            _hover={{ color: "#d32f2d" }}
           >
             Get Started
           </Button>
@@ -40,7 +40,7 @@ const HeroSection = () => {
             colorScheme="white"
             size="lg"
             variant="outline"
-            _hover={{ color: "red" }}
+            _hover={{ color: "#d32f2d" }}
           >
             Learn More
           </Button>
