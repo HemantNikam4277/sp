@@ -1,5 +1,7 @@
 import { Box, Heading, Flex, Text, Image, SimpleGrid } from "@chakra-ui/react";
-import { MdVerifiedUser, MdSettings, MdUpdate, MdFilterList, MdSecurity } from "react-icons/md";
+import { MdVerifiedUser, MdSettings, MdUpdate, MdFilterList, MdOutlineSecurity } from "react-icons/md";
+import { GiArtificialHive } from "react-icons/gi";
+import { BiCustomize } from "react-icons/bi";
 
 const HomePage = () => {
   return (
@@ -19,27 +21,27 @@ const HomePage = () => {
             Features
           </Heading>
           <Feature
-            icon={<MdVerifiedUser size={20} color="blue" />}
+            icon={<GiArtificialHive size={20} color="red" />}
             title="AI-Powered Predictions"
             description="Harness the power of AI to make data-driven decisions. Our algorithms analyze player performance, weather conditions, pitch reports, and more to provide you with the most accurate team recommendations."
           />
           <Feature
-            icon={<MdVerifiedUser size={20} color="blue" />}
+            icon={<MdVerifiedUser size={20} color="red" />}
             title="Easy-to-Use Interface"
             description="Whether you're a beginner or a seasoned fantasy cricket player, our user-friendly interface makes team building a breeze. Simply input your preferences, and let our AI do the rest!"
           />
           <Feature
-            icon={<MdVerifiedUser size={20} color="blue" />}
+            icon={<MdUpdate size={20} color="red" />}
             title="Real-Time Updates"
             description="Stay ahead of the game with real-time updates on player injuries, form, and other crucial factors. Our system constantly updates to provide you with the latest insights."
           />
           <Feature
-            icon={<MdVerifiedUser size={20} color="blue" />}
+            icon={<BiCustomize size={20} color="red" />}
             title="Customizable Strategies"
             description="Want to take control? Customize your team-building strategy with various filters and preferences. Tailor your team to your unique playing style."
           />
           <Feature
-            icon={<MdVerifiedUser size={20} color="blue" />}
+            icon={<MdOutlineSecurity size={20} color="red" />}
             title="Secure and Reliable"
             description="Your data is safe with us. We prioritize security and privacy, ensuring a seamless and trustworthy experience."
           />

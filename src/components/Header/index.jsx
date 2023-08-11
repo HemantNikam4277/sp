@@ -54,21 +54,19 @@ const Header = () => {
             })}
             onClick={() => router.push("/")}
             cursor="pointer"
-            w={["140px", "230px"]}
-            h={["50px", "75px"]}
+            w={["150px", "250px"]}
+            h={["60px", "80px"]}
             pos="relative"
-            overflow={"hidden"}
-            p={4}
           >
             <NextImage
               fill
-              title="halaplay_logo"
-              alt="halaplay_logo"
+              title="sportkeeda_logo"
+              alt="sportkeeda_logo"
               style={{ objectFit: "contain" }}
-              src="https://www.perfectlineup.in/web/assets/front/images/main-logo.png"
+              src="/sportkeeda_logo.jpg"
             />
           </Box>
-          {/* <Image objectFit="contain" src="/assets/halaplay_logo.png" /> */}
+          {/* <Image objectFit="contain" src="/assets/sportkeeda_logo.png" /> */}
           <Flex display={{ base: "none", md: "flex" }} ml={60} mt={6}>
             <DesktopNav />
           </Flex>

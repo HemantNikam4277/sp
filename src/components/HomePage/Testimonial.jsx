@@ -7,21 +7,21 @@ const testimonials = [
     name: 'Ben Parker',
     position: 'CEO',
     company: 'Olpers',
-    image: '...',
+    image: '/assests/testimonials/1.png',
     content: `"I've been a cricket fan for years, and discovering the cricket fantasy app has truly taken my love for the game to a whole new level. As an avid player, I can't stress enough how addictive and exciting this app is. The AI-driven team recommendations have completely changed the way I approach creating my fantasy teams.`,
   },
   {
     name: 'John Smith',
     position: 'MD',
     company: 'IKmh',
-    image: '...',
+    image: '',
     content: `The accuracy of the predictions is astonishing! I've found myself consistently getting better results in my fantasy leagues, thanks to the insights provided by the app. It's like having a personal cricket analyst in my pocket. The app's user-friendly interface and real-time updates make the experience even more enjoyable.`,
   },
   {
     name: 'Allen',
     position: 'Studdent',
     company: 'hdyr',
-    image: '...',
+    image: '',
     content: `I also love the customizable strategies feature. It allows me to tailor my team-building approach according to my preferences and strategies. And the best part? The app is incredibly secure and reliable. I can trust that my data and transactions are safe.`,
   },
 ];
@@ -72,7 +72,7 @@ const Testimonials = () => {
                 <Avatar
                   size="lg"
                   showBorder={true}
-                  borderColor="green.40;0"
+                  borderColor="red.40;0"
                   name="avatar"
                   m={4}
                   src={obj.image}
