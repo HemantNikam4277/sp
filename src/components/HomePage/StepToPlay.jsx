@@ -5,25 +5,25 @@ const StepsToPlay = () => {
     {
       title: "Choose Your Match",
       description: "Select the upcoming match you want to build a team for.",
-      imageSrc: "https://www.perfectlineup.in/web/assets/front/images/sec1-step1.png",
+      imageSrc: "/Artboard1.png",
       altText: "Choose Your Match Screenshot",
     },
     {
       title: "Set Your Preferences",
       description: "Customize your team-building strategy or go with our AI's recommendations.",
-      imageSrc: "https://www.perfectlineup.in/web/assets/front/images/sec1-step2.png",
+      imageSrc: "/Artboard2.png",
       altText: "Set Your Preferences Screenshot",
     },
     {
       title: "Build Your Team",
       description: "Review the suggested team and make any final adjustments.",
-      imageSrc: "https://www.perfectlineup.in/web/assets/front/images/sec1-step3.png",
+      imageSrc: "/Artboard3.png",
       altText: "Build Your Team Screenshot",
     },
     {
       title: "Dominate the Game",
       description: "Enter your team into platforms like Dream11 and watch them win!",
-      imageSrc: "https://www.perfectlineup.in/web/assets/front/images/sec1-step4.png",
+      imageSrc: "/Artboard4.png",
       altText: "Dominate the Game Screenshot",
     },
   ];
