@@ -3,7 +3,7 @@ export default {
     title: "SportKeeda - India's Leading Fantasy Sports Platform | Play Big and Win Big upto 10 Lakh",
     description:
         "SportKeeda is India's leading fantasy sports platform that lets you play a variety of fantasy games and win big. With over thousands of daily contests, our platform offers a range of fantasy sports including cricket, football and kabaddi. Create your own fantasy team, join leagues and compete with other players to climb up the leaderboard and win cash prizes. Our platform is safe, secure, and user-friendly, making it easy for anyone to get started. Join SportKeeda today and experience the thrill of fantasy sports!",
-    image: "/assets/seo_logo.png",
+    image: "/assets/seo_logo.jpg",
     url: "https://www.SportKeeda.com",
     canonical: "https://www.SportKeeda.com",
     openGraph: {
