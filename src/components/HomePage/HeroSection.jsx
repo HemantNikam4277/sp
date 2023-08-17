@@ -38,8 +38,8 @@ const HeroSection = () => {
             Build the Ultimate Winning Team with Sportskeeda's AI-Driven Fantasy
             Cricket Team Builder!
           </Text>
-          <Stack direction={["column", "row"]} spacing={4} mt={4}>
-          <Link
+          <Stack direction={"row"} spacing={4} mt={4}>
+            <Link
               href="https://play.google.com/store/apps/details?id=com.sportskeeda.topic"
               target="_blank"
               rel="noopener noreferrer"
@@ -47,7 +47,6 @@ const HeroSection = () => {
               <img
                 src="https://www.perfectlineup.in/web/assets/front/images/playstr.png"
                 alt="Google Play Store"
-                className="btn-hover-all"
               />
             </Link>
             <Link
@@ -58,7 +57,6 @@ const HeroSection = () => {
               <img
                 src="https://www.perfectlineup.in/web/assets/front/images/applestr.png"
                 alt="App Store"
-                className="btn-hover-all"
               />
             </Link>
           </Stack>
