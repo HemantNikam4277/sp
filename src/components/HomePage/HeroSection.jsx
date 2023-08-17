@@ -8,6 +8,7 @@ import {
   Stack,
   useBreakpointValue,
   SimpleGrid,
+  Link
 } from "@chakra-ui/react";
 
 const HeroSection = () => {
@@ -38,22 +39,28 @@ const HeroSection = () => {
             Cricket Team Builder!
           </Text>
           <Stack direction={["column", "row"]} spacing={4} mt={4}>
-            <Button
-              colorScheme="white"
-              size="lg"
-              variant="outline"
-              _hover={{ color: "#d32f2d" }}
+          <Link
+              href="https://play.google.com/store/apps/details?id=com.sportskeeda.topic"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              Get Started
-            </Button>
-            <Button
-              colorScheme="white"
-              size="lg"
-              variant="outline"
-              _hover={{ color: "#d32f2d" }}
+              <img
+                src="https://www.perfectlineup.in/web/assets/front/images/playstr.png"
+                alt="Google Play Store"
+                className="btn-hover-all"
+              />
+            </Link>
+            <Link
+              href="https://apps.apple.com/in/app/sportskeeda-wwe-cricket/id1462625228"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              Learn More
-            </Button>
+              <img
+                src="https://www.perfectlineup.in/web/assets/front/images/applestr.png"
+                alt="App Store"
+                className="btn-hover-all"
+              />
+            </Link>
           </Stack>
         </Box>
       </Box>
