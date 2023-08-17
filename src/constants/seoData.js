@@ -13,7 +13,7 @@ export default {
         site_name: "SportKeeda - India's Leading Fantasy Sports Platform | Play Big and Win Big upto 10 Lakh",
         images: [
             {
-                url: "/assets/seo_logo.png",
+                url: "/assets/seo_logo.jpg",
 
                 alt: "Og Image Alt"
             }
@@ -54,7 +54,7 @@ export const aboutus_SEO = {
         site_name: "About SportKeeda – Your Daily Fantasy Sports Destination",
         images: [
             {
-                url: "/assets/seo_logo.png",
+                url: "/assets/seo_logo.jpg",
 
                 alt: "Og Image Alt"
             }
