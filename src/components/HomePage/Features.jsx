@@ -1,21 +1,51 @@
-import { Box, Heading, Flex, Text, Image, SimpleGrid } from "@chakra-ui/react";
-import { MdVerifiedUser, MdSettings, MdUpdate, MdFilterList, MdOutlineSecurity } from "react-icons/md";
+import { 
+  Box, 
+  Heading, 
+  Flex, 
+  Text, 
+  Image, 
+  SimpleGrid 
+} from "@chakra-ui/react";
+import {
+  MdVerifiedUser,
+  MdUpdate,
+  MdOutlineSecurity,
+} from "react-icons/md";
 import { GiArtificialHive } from "react-icons/gi";
 import { BiCustomize } from "react-icons/bi";
 
-const HomePage = () => {
+const Features = () => {
   return (
-    <Box bg="white" py={12}>
-    <Box textAlign="center" mb={8}>
-      <Heading as="h2" size="xl" mb={6}>
-      <Text as="span" color="#d32f2d">Sportskeeda </Text>has got everything
-      </Heading>
-      <Text fontSize="lg" color="gray.600">
-        to help you create better fantasy teams
-      </Text>
-    </Box>
+    <Box 
+      bg="white" 
+      py={12}
+    >
+      <Box
+       textAlign="center"
+       mb={8}
+       >
+        <Heading 
+          as="h2" 
+          size="xl" 
+          mb={6}
+        >
+          <Text as="span" color="#d32f2d">
+            Sportskeeda{" "}
+          </Text>
+          has got everything
+        </Heading>
 
-    <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10} px={[10,40]}>
+        <Text fontSize="lg" color="gray.600">
+          to help you create better fantasy teams
+        </Text>
+
+      </Box>
+
+      <SimpleGrid 
+        columns={{ base: 1, md: 2 }} 
+        spacing={10} 
+        px={[10, 40]}
+      >
         <Box p={4}>
           <Heading as="h1" size="lg" mb={6}>
             Features
@@ -46,6 +76,7 @@ const HomePage = () => {
             description="Your data is safe with us. We prioritize security and privacy, ensuring a seamless and trustworthy experience."
           />
         </Box>
+
         <Box p={4}>
           <Image
             src="https://media.istockphoto.com/id/483343487/vector/cricket-mania-india.jpg?s=612x612&w=0&k=20&c=r6SqGVc6Cb4XdZcVQEvSvvMjiSkg5-m0V8yYpFB74BE="
@@ -53,6 +84,7 @@ const HomePage = () => {
             maxW="100%"
           />
         </Box>
+        
       </SimpleGrid>
     </Box>
   );
@@ -60,12 +92,22 @@ const HomePage = () => {
 
 const Feature = ({ icon, title, description }) => {
   return (
-    <Box mb={8} textAlign="left">
-      <Flex align="center" mb={2}>
-        <Box mr={2}>{icon}</Box>
+    <Box 
+      mb={8} 
+      textAlign="left"
+    >
+      <Flex 
+        align="center" 
+        mb={2}
+      >
+        <Box mr={2}>
+          {icon}
+        </Box>
+
         <Heading as="h4" size="md">
           {title}
         </Heading>
+
       </Flex>
       <Text fontSize="md" color="gray.600">
         {description}
@@ -74,4 +116,4 @@ const Feature = ({ icon, title, description }) => {
   );
 };
 
-export default HomePage;
+export default Features;

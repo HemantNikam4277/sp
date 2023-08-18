@@ -57,8 +57,6 @@ const DesktopSubNav = ({ label, href, subLabel }) => {
 };
 
 const DesktopNav = () => {
-  const linkColor = useColorModeValue("white", "gray.200");
-  const linkHoverColor = useColorModeValue("white", "white");
   const popoverContentBgColor = useColorModeValue("white", "white");
 
   return (

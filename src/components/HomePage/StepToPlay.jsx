@@ -1,4 +1,11 @@
-import { Box, Text, Heading, Flex, Image, VStack } from "@chakra-ui/react";
+import { 
+  Box, 
+  Text, 
+  Heading, 
+  Flex, 
+  Image, 
+  VStack 
+} from "@chakra-ui/react";
 
 const StepsToPlay = () => {
   const steps = [
@@ -28,20 +35,31 @@ const StepsToPlay = () => {
     },
   ];
   return (
-    <Box py={12} bg="gray.100">
-      <Box textAlign="center" mx={10}>
+    <Box 
+      py={12} 
+      bg="gray.100"
+    >
+      <Box 
+        textAlign="center" 
+        mx={10}
+      >
         <Heading as="h2" size="xl" mb={6}>
           How It Works
         </Heading>
+
         <Text fontSize="lg" color="gray.600" mb={10}>
           A step-by-step guide to building your winning team with Sportskeeda's AI-driven fantasy cricket team builder.
         </Text>
 
-        <Flex direction={{ base: "column", md: "row" }} justifyContent="space-between">
+        <Flex 
+          direction={{ base: "column", md: "row" }} 
+          justifyContent="space-between"
+        >
           {steps.map((step, index) => (
             <Step key={index} {...step} />
           ))}
         </Flex>
+
       </Box>
     </Box>
   );
@@ -49,7 +67,13 @@ const StepsToPlay = () => {
 
 const Step = ({ title, description, imageSrc, altText }) => {
   return (
-    <VStack spacing={6} alignItems="center" flex="1" p={[1,6]} rounded="lg">
+    <VStack 
+      spacing={6} 
+      alignItems="center" 
+      flex="1" 
+      p={[1,6]}
+      rounded="lg"
+    >
       <Image src={imageSrc} alt={altText} w="100%" h="100%" mb={2} />
       <Heading as="h3" size="lg" mb={2}>
         {title}

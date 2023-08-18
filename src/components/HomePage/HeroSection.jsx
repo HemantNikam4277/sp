@@ -4,10 +4,7 @@ import {
   Box,
   Heading,
   Text,
-  Button,
   Stack,
-  useBreakpointValue,
-  SimpleGrid,
   Link
 } from "@chakra-ui/react";
 
@@ -27,17 +24,23 @@ const HeroSection = () => {
         justifyContent="center"
         alignItems="center"
       >
-        <Box maxW="600px" ml={[0, 20]} textAlign="start">
+        <Box 
+          maxW="600px" 
+          ml={[0, 20]} 
+          textAlign="start"
+        >
           <Heading fontSize={["30px", "50px"]} mb={4}>
             Unleash the Power of AI in{" "}
             <Text as="span" color="#d32f2d">
               Fantasy Cricket!
             </Text>
           </Heading>
+
           <Text as="span" fontWeight={200} fontSize={["20px", "30px"]}>
             Build the Ultimate Winning Team with Sportskeeda's AI-Driven Fantasy
             Cricket Team Builder!
           </Text>
+
           <Stack direction={"row"} spacing={4} mt={4}>
             <Link
               href="https://play.google.com/store/apps/details?id=com.sportskeeda.topic"
@@ -60,6 +63,7 @@ const HeroSection = () => {
               />
             </Link>
           </Stack>
+
         </Box>
       </Box>
       <Box flex="1">

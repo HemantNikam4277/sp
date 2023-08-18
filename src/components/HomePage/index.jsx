@@ -1,5 +1,5 @@
 import { Flex } from "@chakra-ui/react";
-import Benefits from "./Benefits";
+import Features from "./Features";
 import MainSection from "./MainSection";
 import HeroSection from "./HeroSection";
 import Testimonial from "./Testimonial";
@@ -30,8 +30,9 @@ const HomePage = () => {
         <Header />
         <HeroSection />
       </Flex>
+      
       <MainSection />
-      <Benefits />
+      <Features />
       <StepsToPlay />
       <Testimonial />
       <FollowUs />

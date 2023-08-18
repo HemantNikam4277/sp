@@ -1,4 +1,10 @@
-import { Box, Flex, Image, Text, Heading } from "@chakra-ui/react";
+import { 
+  Box, 
+  Flex, 
+  Image, 
+  Text, 
+  Heading 
+} from "@chakra-ui/react";
 
 const HomePage = () => {
   return (

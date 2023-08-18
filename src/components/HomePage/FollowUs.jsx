@@ -1,13 +1,36 @@
-import { Box, Heading, Link, Stack } from "@chakra-ui/react";
+import { 
+  Box, 
+  Heading, 
+  Link, 
+  Stack 
+} from "@chakra-ui/react";
 
 const FollowUs = () => {
   return (
-    <Box bg="#d32f2d" w="100%" h={["35vh", "70vh"]}>
-      <Box textAlign="left" mx={[5, 40]} mt={[50,100]}>
-        <Heading as="h1" color="white" fontSize={['20px', '40px']} mb={4}>
+    <Box 
+      bg="#d32f2d" 
+      w="100%" 
+      h={["35vh", "70vh"]}
+    >
+      <Box 
+        textAlign="left" 
+        mx={[5, 40]} 
+        mt={[50,100]}
+      >
+        <Heading 
+          as="h1" 
+          color="white" 
+          fontSize={['20px', '40px']} 
+          mb={4}
+        >
         "Ready to take your fantasy cricket game to the next level? Download the Sportskeeda app now and start building your winning team today!"
         </Heading>
-        <Stack direction={"row"} spacing={4} mt={[2,6]}>
+
+        <Stack 
+          direction={"row"} 
+          spacing={4} 
+          mt={[2,6]}
+        >
           <Link
             href=" https://play.google.com/store/apps/details?id=com.sportskeeda.topic"
             target="_blank"
@@ -31,6 +54,7 @@ const FollowUs = () => {
             />
           </Link>
         </Stack>
+
       </Box>
     </Box>
   );

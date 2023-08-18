@@ -3,15 +3,10 @@ import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 import {
   Box,
   Flex,
-  Text,
   IconButton,
-  Button,
   Stack,
-  Image,
   Collapse,
-  useColorModeValue,
   useBreakpointValue,
-  Link,
   useDisclosure,
 } from "@chakra-ui/react";
 import NextImage from "next/image";
