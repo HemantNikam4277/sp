@@ -28,33 +28,6 @@ export const NAV_ITEMS = [
     },
 ];
 
-export const STEPS_PLAY = [
-    {
-        title: "Choose Your Match",
-        description: "Select the upcoming match you want to build a team for.",
-        imageSrc: "/Artboard1.png",
-        altText: "Choose Your Match Screenshot",
-      },
-      {
-        title: "Set Your Preferences",
-        description: "Customize your team-building strategy or go with our AI's recommendations.",
-        imageSrc: "/Artboard2.png",
-        altText: "Set Your Preferences Screenshot",
-      },
-      {
-        title: "Build Your Team",
-        description: "Review the suggested team and make any final adjustments.",
-        imageSrc: "/Artboard3.png",
-        altText: "Build Your Team Screenshot",
-      },
-      {
-        title: "Dominate the Game",
-        description: "Enter your team into platforms like Dream11 and watch them win!",
-        imageSrc: "/Artboard4.png",
-        altText: "Dominate the Game Screenshot",
-      },
-]
-
 export const TESTIMONIAL = [
     {
         name: 'Alok Verma',
