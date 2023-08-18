@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://www.halaplay.com
+Host: https://www.sportskeeda.com/
 
 # Sitemaps
-Sitemap: https://www.halaplay.com/sitemap.xml
+Sitemap: https://www.sportskeeda.com/sitemap.xml
